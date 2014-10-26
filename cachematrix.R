@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This file has functions used for inversing a square matrix using the scoping rules to load from environment to 
+## reuse the calculation if already done to save the cost of re calculation
 
-## Write a short comment describing this function
+## This function is responsible to set and get the matrix and the inverse objects to the environment
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function is responsible for retrieving the cached object if any or recalculate
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
